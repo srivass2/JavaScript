@@ -18,8 +18,9 @@ console.log(allHeroes);
 const anotherArray = [1, 2, 3, [4, 5, 6], 7, 8, [6, 5, 4, [3, 2, 1]]];
 console.log(anotherArray.flat(Infinity)); // .flat() method Returns a new array with all sub-array elements concatenated in one array.
 
-// While scraping data from website or any object if we need to convert that data into array
 
+
+// While scraping data from website or any object if we need to convert that data into array
 console.log(Array.from("shashank"));
 
 console.log(Array.isArray("shashank"));// also check if the data is array or not
