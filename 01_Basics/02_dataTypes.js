@@ -14,6 +14,9 @@ let isLoggedIn = true   // boolean type
 let state = null        // null type
 
             /*primitive datatype*/
+    // Primitive data types are immutable, meaning their values cannot be changed once assigned. 
+    //  Primitive data types are stored directly in memory.
+
 //number => 2 to power 53
 //bigInt
 //string => ""
@@ -23,7 +26,12 @@ let state = null        // null type
 //symbol =>unique
 
             /*non primitive datatype*/
+    /* Non-primitive data types are mutable and can be modified. Non-primitive data types are   
+        stored as references to their values in memory. */
+                
 //object
+//Arrays
+//function
 
 console.log(typeof undefined); // it is undefined type 
 console.log(typeof null); // it is object type
