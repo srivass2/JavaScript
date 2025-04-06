@@ -20,13 +20,13 @@ console.log(otherValue.toPrecision(5));
 console.log(Math.abs(-4));
 console.log(Math.round(4.4));
 console.log(Math.round(4.9));
-console.log(Math.ceil(4.4));
-console.log(Math.floor(4.9));
+console.log(Math.ceil(4.4)); //.ceil returns the Highest value irrespective of number after decimal point is <5 or >5
+console.log(Math.floor(4.9)); // .floor returns the lowest value irrespective of number after decimal point is <5 or >5 
 console.log(Math.min(4, 3, 5, 1));
 
 console.log(Math.random()); // it assigns value between 0 and 1.
 
-//suppose i need make a game where i want value between 1 and 10 i.e smallest be 1 and biggest be 10
+//suppose i need to make a game where i want value between 1 and 10 i.e smallest be 1 and biggest be 10
 
 console.log(Math.floor(Math.random() * 10) + 1);
 
