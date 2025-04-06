@@ -6,7 +6,7 @@ console.log(name + repoCount + "value"); // old way
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`) // new way by using backtic or String extrapolation
 
 let gameName = new String("Shashank-js-copy");
-//console.log(gameName.__proto__);
+console.log(gameName.__proto__); // __proto__ can be better observed in browser console
 
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
