@@ -14,6 +14,6 @@ emailId = "ss@gmail.com"
 accountPassword = "98765";
 accountCity = "Dublin"
 
-console.table([accountId, emailId, accountPassword, accountCity, accountState]);
+console.table([accountId, emailId, accountPassword, accountCity, accountState]); // console.table([]) prints the values in a tabular format
 
 console.log(accountId)
