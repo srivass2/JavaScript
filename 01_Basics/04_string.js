@@ -12,9 +12,10 @@ console.log(gameName.length);
 console.log(gameName.toUpperCase());
 
 console.log(gameName.indexOf('n'));
+console.log(gameName.indexOf('a'));  // give the postion of the first occurance
 
 const newString = "      Shashank   ";
 console.log(newString);
-console.log(newString.trim());
+console.log(newString.trim()); // removes extra spaces from either side of the string.
 
 console.log(gameName.split('-')); // splits the string into array based on some common characters.
