@@ -11,7 +11,7 @@ console.log(calculateCartItem(200));
 
 function calculateCartItemRestOperator(...num1) { // by using rest(...) operator we can achieve it.
 
-    return num1;
+    return num1; // we saw that all the values returned in a single array without storing in multiple variable
 }
 console.log(calculateCartItemRestOperator(200, 400, 500, 20000));
 
