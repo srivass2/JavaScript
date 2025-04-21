@@ -38,3 +38,38 @@ Inshort, IIFE: perfect for one-time tasks that you want to run immediately and k
 
 for example: DB connection.
 */
+
+
+// How to pass value in IIFE.
+
+((name) => {
+    console.log(`DB connection of ${name}`);
+}) ("sam");
+
+// IMPORTANT -- To run multiple IIFEs in one file then each IIFE should have ; at the end
+
+// INTERESTING FACT---- IIFEs can also have name. This basically help in debugging instead being annonymous.. example:
+
+(function chai() {          // Normal named IIFE function
+    console.log(`named IIFE connection..`);
+}) ();
+
+(code = () => {             // Arrow named IIFE function
+    console.log("named IIFE with ARROW function");
+}) ();
+
+/* Key Point:
+✅ The name of a named IIFE is only available inside the IIFE itself.
+❌ It does not go into the global scope.
+Sometimes, for debugging or stack traces, a name helps.
+example:
+
+So you get:
+ReferenceError: loadData is not defined
+    at <anonymous>:1:1
+
+Rather than:
+ReferenceError: <anonymous> is not defined
+
+Hence it still doesn’t pollute the global space — which is the main goal of IIFE!
+*/
