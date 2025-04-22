@@ -1,3 +1,4 @@
+
 /*  Javascript Execution Context
 
 {} --->  Global EC  <-- this
@@ -82,3 +83,5 @@ l         l   addNum(4,5)        l          l  FEC return 9 to GEC          l   
 l         l   -----------------> l__________l --------------------------->  l          l
 l_________l                      l___FEC____l  FEC work finish, poped out   l__________l
 l___GEC___l                      l___GEC____l                               l___GEC____l 
+
+*/
