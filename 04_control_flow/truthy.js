@@ -147,5 +147,3 @@ greetUser1("");  //Output Hello, Guest!
 
 /*The difference we can see that || treated it as missing value hence gave output as guest, but ?? treated it as not null and gave "". Because || goes into checking if the value is truthy or falsy that is why the behavior changed in the output.
 */
-
-
