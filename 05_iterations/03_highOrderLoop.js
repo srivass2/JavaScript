@@ -1,4 +1,6 @@
 // for-of loop can be used for string, arrays, maps but not for OBJECTS.
+// The best part of this is that we donot need to worry about end condtion of the loop. it automatically takes care of it.
+
 let arr = [1, 2, 3, 4, 5]
 for (const num of arr) {
     console.log(`number : ${num}`);   
