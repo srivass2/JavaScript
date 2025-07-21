@@ -1,11 +1,9 @@
 // singleton (if an "object" is created using "constructor" then we call it "Singleton")
 
-
+const mySym = Symbol();
 
 
 // object Literals 
-
-const mySym = Symbol();
 
 const jsUser = {
     name : "Shashank",
