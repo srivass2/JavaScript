@@ -21,7 +21,7 @@ console.log(id===anotherId);
 // Array, Object, Functions
 //example
 
-const myArray = ["IronMan", "CaptaainAmerica", "Hulk"];
+const myArray = ["IronMan", "CaptainAmerica", "Hulk"];
 
 let myObj = {
     name: "shashank",
