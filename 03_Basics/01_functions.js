@@ -9,7 +9,7 @@
 //     console.log("K");
 
 // }
-//myName();   // if we type myName then this is just the function reference but to execute it we add () like myName();
+//myName;   // if we type myName then this is just the function reference but to execute it we add () like myName();
 
 function addNumber(number1, number2){    // number1 and number2 are called PARAMETERS
     console.log(number1 + number2);
