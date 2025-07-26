@@ -67,6 +67,21 @@ console.log(tea(1,2));
 }) (11);
 
 
+const map1 = new Map();
+map1.set("IT" , "Italy");
+map1.set("HN" , "Hungary");
+for (const element of map1) {
+    console.log(element);
+    
+    } 
+
+    for (const [key,value] of map1) {
+        console.log(key);
+        console.log(key,value);       
+        
+        
+    }
+
 
 
 
