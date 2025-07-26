@@ -82,6 +82,16 @@ for (const element of map1) {
         
     }
 
+    const obbj = {
+        js: "JAvascript",
+        py: "Python",
+        cpp: "C++",
+        ios: "Apple"
+    }
+for (const key in obbj) {
+    console.log(`${key} stands for ${obbj[key]}`);
+    
+}
 
 
 
