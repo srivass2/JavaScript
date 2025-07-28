@@ -93,6 +93,32 @@ for (const key in obbj) {
     
 }
 
+const arry = [1,2,3,4,5,6,7,8,9];
+const change = arry.map((num) => num * 10).map((num) => num + 1).filter((num) => num > 41);
+console.log(change);
+
+
+const cartTotal = [{
+    articleName: "berry",
+    price: 100
+},
+{
+    articleName: "banana",
+    price: 200
+},
+{
+    articleName: "apple",
+    price: 400
+
+}];
+const total = cartTotal.reduce((acc , item) => (acc + item.price),0);
+console.log(`Total cost of cart is ${total}`);
+
+
+
+
+
+
 
 
 

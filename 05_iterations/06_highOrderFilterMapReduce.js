@@ -55,6 +55,19 @@ const myCoding = [
  const numVal = val.map( (num) => num + 10);
  console.log(numVal);
 
+/* Here's a clear and simple basic difference between map() and filter():
+
+Feature	                    map()                                           	filter()
+Purpose	           Transforms each element in an array	        Filters elements based on a condition
+Return Value	   New array of same length	                    New array with fewer or same elements
+Callback	       Returns the transformed value	            Returns true (keep) or false (discard)
+Example	           [1, 2, 3].map(x => x * 2) → [2, 4, 6]	    [1, 2, 3].filter(x => x > 1) → [2, 3]
+
+Summary:
+Use **map** when you want to transform elements.
+Use **filter** when you want to select elements that meet a condition.
+
+*/
 
  //++++++++++++++++++++++++ CHAINING ++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -104,3 +117,12 @@ const cart = [
 const grandTotal = cart.reduce( (acc, item) => (acc + item.price),0);
 console.log(grandTotal);
 // Here we saw that just one line statement was able to add all the prices of the item in cart.    
+
+//Another way just to understand the working of Accumulator and currentValue in .reduce()
+
+const grandTot = cart.reduce(function (acc , item) {
+    console.log(`accmulator value ${acc} and current value is ${item.price}`);
+    return acc + item.price;   
+}, 0)
+console.log(grandTot);
+
