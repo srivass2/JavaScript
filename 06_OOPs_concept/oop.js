@@ -25,9 +25,12 @@ But the right way is to use this keyword because in future if the object variabl
 */
 
 
-//                Constructor function
-// constructor function always gives new instance rather than working on same instance inorder to avoid overwrite on original values. Let see with example of both.
-/* Things to know
+//                             Constructor function
+
+
+/* constructor function always gives new instance rather than working on same instance inorder to avoid overwrite on original values. Let see with example of both.
+ 
+Things to know
     Step 1) When we use new keyword, an empty object is created called instance.
     Step 2) A constructor function is called due to the new keyword. It packs all the arguments and give us.
     Step 3) this keyword injects all the arguments.
