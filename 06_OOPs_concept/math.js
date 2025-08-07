@@ -19,7 +19,12 @@ console.log(Object.getOwnPropertyDescriptor(Math, "PI"));
 const chai = {
     name: "ginger chai",
     price: 250,
-    isAvailable: true
+    isAvailable: true,
+
+    orderChai: function() {
+      console.log(`Chai nahi bani`);      
+      
+    }
 }
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name")); // here we see the discriptor has given few properties as below.
@@ -30,7 +35,6 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name")); // here we see the d
   configurable: true
 }
 */
-
 
 // now lets try to modify these descriptor properties.
 
@@ -48,3 +52,13 @@ console.log(Object.getOwnPropertyDescriptor(chai, "name"));
   configurable: true
 }
   */
+
+for (const key in chai) {
+  if (typeof chai[key] != "function") {
+    console.log(`${key} : ${chai[key]}`);
+    }  
+  
+}
+//                          IMPORTANT
+
+// here we saw two things: 1) we wanted it to print key values only and not the function part, hence we kept an If() condition. 2) we saw that since for name the enumerable was false hence that is also not displayed in the output.
